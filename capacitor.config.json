@@ -1,0 +1,9 @@
+{
+  "appId": "com.kellymacdev.askhole",
+  "appName": "AskHole",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "allowNavigation": ["docs.google.com"]
+  }
+}
