@@ -1,0 +1,14 @@
+{
+  "platforms": {
+    "android": {
+      "icon": {
+        "source": "icon.png"
+      }
+    },
+    "ios": {
+      "icon": {
+        "source": "icon.png"
+      }
+    }
+  }
+}
