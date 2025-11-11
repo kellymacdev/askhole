@@ -1,0 +1,30 @@
+workflows:
+  build-android:
+    name: Build Android APK (React + Capacitor)
+    max_build_duration: 60
+    environment:
+      node: 18
+      npm: default
+      groups:
+        - default
+    scripts:
+      - name: Install dependencies
+        script: |
+          npm install
+          npx cap sync android
+      - name: Build React app
+        script: |
+          npm run build
+      - name: Copy build to Capacitor
+        script: |
+          npx cap copy android
+      - name: Build Android APK
+        script: |
+          cd android
+          ./gradlew assembleDebug
+    artifacts:
+      - android/app/build/outputs/**/*.apk
+    publishing:
+      email:
+        recipients:
+          - kellymacdev@gmail.com
