@@ -37,7 +37,11 @@ function App() {
     }
 
     fetchQuestions();
-  }, []);
+    if (questions.length > 0 && !currentQuestion) {
+    getNextQuestion(); // initialize with first question
+    }
+
+  }, [questions]);
 
   function getNextQuestion() {
     if (questions.length === 0) return;
