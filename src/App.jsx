@@ -19,8 +19,15 @@ function App() {
         console.log("Fetching questions from:", SHEET_URL);
         const text = await res.text();
         console.log("Raw CSV data:", text);
-        const parsed = Papa.parse(text, { header: true, skipEmptyLines: true }).data;
+        const parsed = Papa.parse(text, { header: true,
+            skipEmptyLines: true,
+            dynamicTyping: true,
+            quoteChar: '"'
+        }).data;
         console.log("Parsed questions:", parsed);
+        parsed.forEach((row, i) => {
+        console.log(`Row ${i}:`, row);
+        });
 
         const formatted = parsed
           .map(row => {
