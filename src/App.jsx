@@ -16,9 +16,10 @@ function App() {
     async function fetchQuestions() {
       try {
         const res = await fetch(SHEET_URL);
-        console.log("Fetching questions from:", SHEET_URL);
+        console.log("fetch status:", res.status);
         const text = await res.text();
-        console.log("Raw CSV data:", text);
+        console.log("Raw CSV length:", text.length);
+        console.log("First 200 chars:", text.slice(0, 200))
         const parsed = Papa.parse(text, { header: true,
             skipEmptyLines: true,
             dynamicTyping: true,
