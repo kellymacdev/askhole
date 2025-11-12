@@ -59,8 +59,6 @@ npx cap open android
 
 ## Deployment
 
-The web version is hosted using GitHub Pages.
-
 The Android version is built and packaged using Codemagic for CI/CD integration.
 
 
