@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 import './index.css';
 
 function App() {
-  const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvbwERGAkJMYjoujpgnU0LL_jD0hhqvWMZ_rG3YiP05r3oj9506Eq550kGzOSbCe1uoT_ObcoXh2QG/pub?output=csv';
+  const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvbwERGAkJMYjoujpgnU0LL_jD0hhqvWMZ_rG3YiP05r3oj9506Eq550kGzOSbCe1uoT_ObcoXh2QG/pub?gid=0&single=true&output=csv';
 
   const [questions, setQuestions] = useState([]);
   const [includeNonStandard, setIncludeNonStandard] = useState(false);
