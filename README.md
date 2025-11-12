@@ -1,16 +1,73 @@
-# React + Vite
+# Am I the AskHole?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Am I the AskHole? is a playful, minimalist web and Android app that serves up random conversation-starting questions — some tame, some spicy.
+Users can toggle whether to include spicy questions, flip through prompts, and even submit their own via an embedded Google Form.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Randomized question generator
 
-## React Compiler
+- Optional “spicy” mode toggle
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fully responsive design and Android app (built with Capacitor)
 
-## Expanding the ESLint configuration
+- Embedded Google Form for user-submitted questions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Dynamic data loaded directly from a published Google Sheet
+
+## Built With
+
+React – for the interactive UI
+
+Vite – for fast development and builds
+
+Capacitor – to wrap the web app as a native Android app
+
+Papaparse – for parsing CSV data from Google Sheets
+
+Google Sheets & Forms – for easy data management
+
+## Setup Instructions
+
+Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/askhole.git
+cd askhole
+```
+
+
+Install dependencies
+```bash
+npm install
+```
+
+Run locally
+```bash
+npm run dev
+```
+
+Build for production
+```bash
+npm run build
+```
+
+Sync with Capacitor (for Android builds)
+```bash
+npx cap sync
+npx cap open android
+```
+
+## Deployment
+
+The web version is hosted using GitHub Pages.
+
+The Android version is built and packaged using Codemagic for CI/CD integration.
+
+
+### Credits
+
+Some of the questions used in this app were adapted from the free question pack provided by [AskHole](https://askhole.io/).  
+They offer excellent curated prompts and conversation starters — check them out!
+
+### Author
+Kelly MacDevette
