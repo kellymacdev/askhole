@@ -2,13 +2,11 @@
 
 Am I the AskHole? is a playful, minimalist web and Android app that serves up random conversation-starting questions — some tame, some spicy.
 Users can toggle whether to include spicy questions, flip through prompts, and even submit their own via an embedded Google Form.
-
-## Features!
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c83779bc-5935-4423-a1c0-3afa6d74c386" alt="Me" width="250" style="border-radius:15px;"/>
 </p>
 
+## Features!
 
 - Randomized question generator
 
