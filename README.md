@@ -5,7 +5,9 @@ Users can toggle whether to include spicy questions, flip through prompts, and e
 
 ## Features!
 
-![2F1843A4-64E2-4FCD-8224-BFD1ABAA34E2](https://github.com/user-attachments/assets/c83779bc-5935-4423-a1c0-3afa6d74c386)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c83779bc-5935-4423-a1c0-3afa6d74c386" alt="Me" width="250" style="border-radius:15px;"/>
+</p>
 
 
 - Randomized question generator
